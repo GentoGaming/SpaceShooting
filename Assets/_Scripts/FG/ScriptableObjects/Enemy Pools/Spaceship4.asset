@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65609135dc812d745b538ed829d7ca95, type: 3}
+  m_Name: Spaceship4
+  m_EditorClassIdentifier: 
+  poolTag: Spaceship4
+  prefab: {fileID: 4818532194260849569, guid: d66d0c22327732846a38f82880a0197f, type: 3}
+  size: 50
+  position:
+  - {x: 0, y: 0}
+  rotation: {x: 0, y: 0, z: 90}

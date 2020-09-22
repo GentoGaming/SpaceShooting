@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="38d56179-6cd6-45a9-b0c5-68d212da59b7" name="Default Changelist" comment="" />
+    <list default="true" id="81751aba-dc06-4346-b7da-8066943908bd" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,24 +28,65 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/FG/Background Parallax/FadeColorInOut.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/FG/Weapons/BombLauncher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/FG/Weapons/SingleTurret.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.0/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/FG/Managers Scripts/IPooledObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/FG/Weapons/TripleTurret.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/FG/NPC/EnemySpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/FG/Managers Scripts/PoolManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/FG/ScriptableObjects/Pool.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/SpaceAssets/Scripts/Misc/RandomColor.cs" />
-        <option value="$PROJECT_DIR$/Assets/ParallaxEffect.cs" />
-        <option value="$PROJECT_DIR$/Assets/SpaceAssets/Scripts/ParallaxMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/SpaceAssets/Scripts/CameraMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/SpaceAssets/Scripts/ShootingStar.cs" />
-        <option value="$PROJECT_DIR$/Assets/BackgroundEffects.cs" />
-        <option value="$PROJECT_DIR$/Assets/SpaceAssets/Scripts/SpaceManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Background Parallax/BackgroundEffects.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FG/Background Parallax/NewBehaviourScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FG/Managers Scipts/SpaceManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FG/Background Parallax/BackgroundEffects.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Weapons/TripleShotWeapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Weapons/SingleShotWeapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Managers Scipts/WeaponsManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Common Scripts/Pool.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Managers Scripts/BulletManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Common/IpooledObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/BulletReset.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/ScriptableObjects/Bullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Bullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/ScriptableObjects/BulletGenre.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Camera/CameraRation.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Camera/CameraRatio.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/NPC/EnemyContol.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Background Parallax/BackgroundEffects.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Player/PlayerActions.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Player/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/NPC/IEntity.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Weapons/EnemyBlueWeapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/PickUP.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Weapons/HomingMissle.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/NPC/HealthBar/HealthBar.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Managers Scripts/IPooledObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Background Parallax/FadeColorInOut.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Camera/CameraScreenRatio.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Managers Scripts/PoolManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Managers Scripts/SpaceManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Managers Scripts/WeaponsManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/NPC/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/NPC/EnemySpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Player/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Player/PlayerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Player/SpaceShip.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/ScriptableObjects/Pool.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Weapons/BombLauncher.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Weapons/PickUp.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Weapons/Bullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Weapons/SingleTurret.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Weapons/TripleTurret.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Weapons/HomingMissile.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Weapons/IWeapons.cs" />
       </list>
     </option>
   </component>
-  <component name="ProjectId" id="1h9BIhIVSRTsSRxDkRU0uwHOk4G" />
+  <component name="ProjectId" id="1hQWZjlng5jywVQQcDUSe35VpfT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -36,6 +95,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="ReSpellerSettingsId" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -60,18 +120,30 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="38d56179-6cd6-45a9-b0c5-68d212da59b7" name="Default Changelist" comment="" />
-      <created>1599413351128</created>
+      <changelist id="81751aba-dc06-4346-b7da-8066943908bd" name="Default Changelist" comment="" />
+      <created>1599943857086</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1599413351128</updated>
-      <workItem from="1599413358039" duration="20419000" />
-      <workItem from="1599726871223" duration="1494000" />
-      <workItem from="1599728421526" duration="68000" />
-      <workItem from="1599728712882" duration="93000" />
-      <workItem from="1599728825609" duration="691000" />
-      <workItem from="1599729543545" duration="6142000" />
-      <workItem from="1599736554519" duration="3760000" />
+      <updated>1599943857086</updated>
+      <workItem from="1599943864563" duration="1829000" />
+      <workItem from="1600075927307" duration="25098000" />
+      <workItem from="1600194352863" duration="914000" />
+      <workItem from="1600243415301" duration="4764000" />
+      <workItem from="1600259172049" duration="19185000" />
+      <workItem from="1600361565423" duration="3860000" />
+      <workItem from="1600520555082" duration="6292000" />
+      <workItem from="1600532827524" duration="2009000" />
+      <workItem from="1600541515384" duration="5577000" />
+      <workItem from="1600591260343" duration="7631000" />
+      <workItem from="1600612697980" duration="4635000" />
+      <workItem from="1600631809700" duration="2602000" />
+      <workItem from="1600639406052" duration="866000" />
+      <workItem from="1600685809096" duration="8994000" />
+      <workItem from="1600715173340" duration="10058000" />
+      <workItem from="1600731983972" duration="10913000" />
+      <workItem from="1600755674051" duration="10925000" />
+      <workItem from="1600773494859" duration="11684000" />
+      <workItem from="1600786039279" duration="359000" />
     </task>
     <servers />
   </component>
@@ -80,17 +152,37 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="718" y="380" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1599421635965">
+    <state x="869" y="250" key="RiderGenerateDialog" timestamp="1600732008202">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="718" y="380" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.1920.1040@0.0.1920.1040" timestamp="1599421635965" />
-    <state x="567" y="29" width="1010" height="979" maximized="true" key="dock-window-1" timestamp="1599729836101">
+    <state x="869" y="250" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600732008202" />
+    <state x="477" y="185" key="SettingsEditor" timestamp="1600114087173">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="567" y="29" width="1010" height="979" maximized="true" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599729836101" />
+    <state x="477" y="185" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1600114087173" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1600534056853">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1600534056853" />
+    <state x="632" y="252" key="run.anything.popup" timestamp="1600111061587">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="632" y="252" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600111061587" />
   </component>
 </project>

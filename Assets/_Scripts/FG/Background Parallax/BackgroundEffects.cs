@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using _Scripts.FG.Managers_Scripts;
+using UnityEngine;
 using Random = UnityEngine.Random;
 
 namespace FG.Background_Parallax
@@ -15,7 +17,7 @@ namespace FG.Background_Parallax
         [Header("________________________________________________________________________________")]
         public bool sizeSettings;
         [Range(1.0f, 10.0f)] public float multiplierMax = 3f;
-        private Vector3 _initialScale;
+        private Vector2 _initialScale;
         [Header("________________________________________________________________________________")]
         public bool rotationSettings;
         public float rotationSpeedMin = 3f;
@@ -29,13 +31,15 @@ namespace FG.Background_Parallax
         public bool movementSettings;
 
         private Transform _transform;
-        private Vector3 _transformPos;
+        private Vector2 _transformPos;
 
         public float minSpeed = 0.2f;
         public float maxSpeed = 0.6f;
         private float _speed;
         private float _startPos;
         private float _finalPos;
+
+        public bool regenerate;
 
         [Header("________________________________________________________________________________")]
         private float _backgroundSpeed;  
@@ -80,9 +84,9 @@ namespace FG.Background_Parallax
 
         private void InitializeBoundries()
         {
-            Bounds bounds = SpaceManager.instance.spaceBackground.GetComponent<Renderer>().bounds;
-            _startPos = bounds.max.x;
-            _finalPos = bounds.min.x;
+            Bounds bounds = SpaceManager.Instance.blackGroundBound;
+            _startPos = bounds.max.x + 50;
+            _finalPos = bounds.min.x - 50;
         }
 
         private void ChangeSprite()
@@ -98,7 +102,7 @@ namespace FG.Background_Parallax
             {
                 if (randomize)
                 {
-                    _rotationSpeed = (Random.Range(0, 100) < 50 ? -1f : 1f) * Random.Range(rotationSpeedMin, rotationSpeedMax);
+                    _rotationSpeed = Random.Range(rotationSpeedMin, rotationSpeedMax);
                 }
                 else
                 {
@@ -136,9 +140,10 @@ namespace FG.Background_Parallax
             if (movementSettings)
             {
                 _transformPos = transform.position;
-                if (transform.position.x < _finalPos)
+                
+                if (transform.position.x < _finalPos && regenerate)
                 {
-                    transform.position = new Vector3(_startPos, _transformPos.y, _transformPos.z);
+                    transform.position = new Vector2(_startPos, _transformPos.y);
                     ReGenerate();
                 }
             
@@ -146,11 +151,16 @@ namespace FG.Background_Parallax
             }
         }
 
+        private void OnBecameInvisible()
+        {
+            if(!regenerate) gameObject.SetActive(false);
+        }
+
         private void UpdateBackgroundSpeed()
         {
             if (rotationSettings || movementSettings)
             {
-                _backgroundSpeed = SpaceManager.instance.gameBackgroundSpeed;
+                _backgroundSpeed = SpaceManager.Instance.gameBackgroundSpeed;
             }
         }
     }

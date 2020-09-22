@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Planeta
+  - Weapons
+  - Slots
+  - bullet
+  - Enemies
+  - enemyBullet
   layers:
   - Default
   - TransparentFX
@@ -13,12 +19,12 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Enemy
+  - Player
+  - PlayerBullets
+  - EnemyBullets
+  - Pickups
+  - Missle
   - 
   - 
   - 
@@ -38,6 +44,30 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BG
+    uniqueID: 1699128369
+    locked: 0
+  - name: BulletsEnemy
+    uniqueID: 1976837589
+    locked: 0
+  - name: Bullets
+    uniqueID: 9132129
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Enemies
+    uniqueID: 2420889361
+    locked: 0
+  - name: Entity
+    uniqueID: 815626877
+    locked: 0
+  - name: SpaceShipAndWeapons
+    uniqueID: 3894252929
+    locked: 0
+  - name: UI
+    uniqueID: 3567595473
+    locked: 0
+  - name: Edges
+    uniqueID: 1512489881
     locked: 0
