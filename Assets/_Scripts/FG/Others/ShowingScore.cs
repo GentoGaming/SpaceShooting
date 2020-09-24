@@ -26,6 +26,7 @@ namespace _Scripts.FG.Others
 
             if (_timeCounter == 0)
             {
+                _gameManager.Score = 0;
                 // Change (0) .. To MainMenu Scene
                 SceneManager.LoadScene(0);
             }

@@ -84,14 +84,14 @@
         <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Background Parallax/FadeColorInOut.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Background Parallax/BackgroundEffects.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Camera/CameraScreenRatio.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Managers Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Managers Scripts/WeaponsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Managers Scripts/PoolManager.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Others/PlayAudio.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Others/ShowingScore.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Player/SpaceShip.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Weapons/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Managers Scripts/SpaceManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Managers Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Others/ShowingScore.cs" />
       </list>
     </option>
   </component>
@@ -160,6 +160,7 @@
       <workItem from="1600891425051" duration="10165000" />
       <workItem from="1600932422613" duration="408000" />
       <workItem from="1600932982975" duration="212000" />
+      <workItem from="1600948157266" duration="432000" />
     </task>
     <servers />
   </component>
