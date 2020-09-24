@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace _Scripts.FG.Managers_Scripts
@@ -8,7 +9,7 @@ namespace _Scripts.FG.Managers_Scripts
     public class GameManager : MonoBehaviour
     {
         public static GameManager Instance = null;
-        public AudioSource MusicAudioSource { get; private set; }
+        [NonSerialized] public AudioSource MusicAudioSource;
         public int Score { set; get; }
 
         void Start()
@@ -18,7 +19,7 @@ namespace _Scripts.FG.Managers_Scripts
             Score = 0;
             MusicAudioSource = GetComponent<AudioSource>();
             DontDestroyOnLoad(this.gameObject);
-
+            ChangeToNextScene();
         }
 
         public void QuitGame()
@@ -26,13 +27,7 @@ namespace _Scripts.FG.Managers_Scripts
             Application.Quit();
         }
     
-        public void TurnMusic(bool state)
-        {
-            if (MusicAudioSource == null) return;
-            if (state is true) 
-                MusicAudioSource.Play();
-            else MusicAudioSource.Pause();
-        }
+ 
 
 
         public void SetFinalScore()

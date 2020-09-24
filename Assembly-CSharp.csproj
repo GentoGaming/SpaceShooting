@@ -78,6 +78,7 @@
      <Compile Include="Assets\_Scripts\FG\NPC\Enemy.cs" />
      <Compile Include="Assets\_Scripts\FG\Background Parallax\FadeColorInOut.cs" />
      <Compile Include="Assets\_Scripts\FG\Managers Scripts\WeaponsManager.cs" />
+     <Compile Include="Assets\_Scripts\FG\Others\ControlMenuUI.cs" />
      <None Include="Assets\_Art\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\_Art\WarFX\Shaders\WFX_S Multiply Soft.shader" />
      <None Include="Assets\_Art\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />

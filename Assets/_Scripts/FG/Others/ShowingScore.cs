@@ -28,7 +28,7 @@ namespace _Scripts.FG.Others
             {
                 _gameManager.Score = 0;
                 // Change (0) .. To MainMenu Scene
-                SceneManager.LoadScene(0);
+                SceneManager.LoadScene(1);
             }
         }
     

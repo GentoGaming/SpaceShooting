@@ -90,8 +90,10 @@
         <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Player/SpaceShip.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Weapons/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Managers Scripts/SpaceManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Managers Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Others/ShowingScore.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Others/ContolMenuUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Managers Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Others/ControlMenuUI.cs" />
       </list>
     </option>
   </component>
@@ -105,6 +107,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -161,6 +164,7 @@
       <workItem from="1600932422613" duration="408000" />
       <workItem from="1600932982975" duration="212000" />
       <workItem from="1600948157266" duration="432000" />
+      <workItem from="1600951241030" duration="1787000" />
     </task>
     <servers />
   </component>
@@ -197,10 +201,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1600534056853" />
-    <state x="632" y="252" key="run.anything.popup" timestamp="1600111061587">
+    <state x="632" y="252" key="run.anything.popup" timestamp="1600951998955">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="632" y="252" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600111061587" />
+    <state x="632" y="252" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600951998955" />
     <state x="588" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1600885662092">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
