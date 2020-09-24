@@ -24,7 +24,7 @@ namespace _Scripts.FG.Weapons
         {
             if (isAShield)
             {
-                _spaceManager.spaceShip.damageMultiplier = 0;
+                _spaceManager.SpaceShip.damageMultiplier = 0;
                 Invoke(nameof(TurnOffShield), 5f);
                 _spaceManager.playerShield.gameObject.SetActive(true);
                 gameObject.SetActive(false);
@@ -35,7 +35,7 @@ namespace _Scripts.FG.Weapons
                 pickUpReference.tag = "Weapons";
                 _weaponsManager.InitNewWeapon();
                 gameObject.SetActive(false);
-                _spaceManager.spaceShip.ChangeWeapon(pickUpReference.transform.GetSiblingIndex());
+                _spaceManager.SpaceShip.ChangeWeapon(pickUpReference.transform.GetSiblingIndex());
             }
 
             if (!manyPickUps)
@@ -46,7 +46,7 @@ namespace _Scripts.FG.Weapons
 
         private void TurnOffShield()
         {
-            _spaceManager.spaceShip.damageMultiplier = 0.5f;
+            _spaceManager.SpaceShip.damageMultiplier = 0.5f;
             _spaceManager.playerShield.gameObject.SetActive(false);
         }
     }

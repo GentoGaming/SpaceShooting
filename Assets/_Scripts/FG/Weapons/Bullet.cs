@@ -9,7 +9,7 @@ namespace _Scripts.FG.Weapons
         public float bulletDamage;
         public float fieldOfImpact;
         public LayerMask layerToHit;
-        public float bulletSpeed = 6;
+        public float bulletSpeed ;
         public bool isHomingMissile;
         public float rotationSpeed = 1f;
         private float _angle;
@@ -47,9 +47,9 @@ namespace _Scripts.FG.Weapons
             {
                 if (!other.transform.gameObject.name.Equals("SpaceShip")) other.transform.gameObject.SetActive(false);
                 gameObject.SetActive(false);
-                _weaponManager.particleSystemExplosion.transform.position = transform.position;
-                _weaponManager.particleSystemExplosion.Stop();
-                _weaponManager.particleSystemExplosion.Play();
+                _weaponManager.ParticleSystemExplosion.transform.position = transform.position;
+                _weaponManager.ParticleSystemExplosion.Stop();
+                _weaponManager.ParticleSystemExplosion.Play();
             }
 
             IEntity entity = other.gameObject.GetComponent<IEntity>();
@@ -114,20 +114,10 @@ namespace _Scripts.FG.Weapons
 
         private void Shoot()
         {
-            if (_gameObjectTag.Equals("enemyBullet"))
-            {
-                _bulletRigidBody.AddForce(new Vector2(-bulletSpeed * 1000, 0));
-            }
-            else
-            {
-                _bulletRigidBody.AddForce(new Vector2(bulletSpeed * 1000, 0));
-            }
+            _bulletRigidBody.AddForce(_gameObjectTag.Equals("enemyBullet")
+                ? new Vector2(-_spaceManager.gameBackgroundSpeed * 1000, 0)
+                : new Vector2(_spaceManager.gameBackgroundSpeed * 1000, 0));
         }
-
-        private enum LayerID
-        {
-            Enemy = 8,
-            Player = 9
-        }
+        
     }
 }

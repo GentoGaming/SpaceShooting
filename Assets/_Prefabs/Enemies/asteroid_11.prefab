@@ -149,8 +149,9 @@ MonoBehaviour:
   moveInWavePattern: 0
   startMaxHealth: 20
   bulletInfo1: {fileID: 11400000, guid: edb161fd2a3033444b82bfac2605872f, type: 2}
-  bulletInfo2: {fileID: 11400000, guid: 44347c953d210d34598e5b4204a6d467, type: 2}
-  bulletSpeed: 6
+  bulletInfo2: {fileID: 11400000, guid: 9fa87a8e09f7ebe408a3522045972c26, type: 2}
+  bulletInfo3: {fileID: 11400000, guid: 44347c953d210d34598e5b4204a6d467, type: 2}
+  bulletSpeed: 15
   timePeriod: 2
   maxRandomHeight: 30
 --- !u!58 &-8975370124323356923

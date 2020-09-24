@@ -5,6 +5,9 @@ using Random = UnityEngine.Random;
 
 namespace FG.Background_Parallax
 {
+    
+    [RequireComponent(typeof(SpriteRenderer))]
+
     public class BackgroundEffects : MonoBehaviour
     {
     
@@ -84,7 +87,7 @@ namespace FG.Background_Parallax
 
         private void InitializeBoundries()
         {
-            Bounds bounds = SpaceManager.Instance.blackGroundBound;
+            Bounds bounds = SpaceManager.Instance.BlackGroundBound;
             _startPos = bounds.max.x + 50;
             _finalPos = bounds.min.x - 50;
         }

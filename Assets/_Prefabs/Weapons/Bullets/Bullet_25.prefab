@@ -134,11 +134,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b19c26e11db26494a9ed9f4a1ebabf87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletDamage: 10
+  bulletDamage: 20
   fieldOfImpact: 0
   layerToHit:
     serializedVersion: 2
     m_Bits: 0
   bulletSpeed: 6
   isHomingMissile: 0
-  _rotateSpeed: 6
+  rotationSpeed: 1

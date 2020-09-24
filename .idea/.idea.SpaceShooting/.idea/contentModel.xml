@@ -38,6 +38,13 @@
               <e p="EmojiOne Attribution.txt" t="Include" />
             </e>
           </e>
+          <e p="ToonEffect" t="Include">
+            <e p="ToonEffect_V2" t="Include">
+              <e p="HTSequence.cs" t="Include" />
+              <e p="HTSpriteSequencer.cs" t="Include" />
+              <e p="HTSpriteSheet.cs" t="Include" />
+            </e>
+          </e>
           <e p="WarFX" t="Include">
             <e p="Shaders" t="Include">
               <e p="WFX_S Add Scroll.shader" t="Include" />
@@ -64,6 +71,7 @@
               <e p="CameraScreenRatio.cs" t="Include" />
             </e>
             <e p="Managers Scripts" t="Include">
+              <e p="GameManager.cs" t="Include" />
               <e p="IpooledObject.cs" t="Include" />
               <e p="PoolManager.cs" t="Include" />
               <e p="SpaceManager.cs" t="Include" />
@@ -72,10 +80,11 @@
             <e p="NPC" t="Include">
               <e p="Enemy.cs" t="Include" />
               <e p="EnemySpawner.cs" t="Include" />
-              <e p="HealthBar" t="Include">
-                <e p="HealthBar.cs" t="Include" />
-              </e>
               <e p="IEntity.cs" t="Include" />
+            </e>
+            <e p="Others" t="Include">
+              <e p="PlayAudio.cs" t="Include" />
+              <e p="ShowingScore.cs" t="Include" />
             </e>
             <e p="Player" t="Include">
               <e p="PlayerController.cs" t="Include" />

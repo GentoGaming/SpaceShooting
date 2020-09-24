@@ -5,26 +5,20 @@ namespace _Scripts.FG.NPC
 {
     public class EnemySpawner : MonoBehaviour
     {
-        public static EnemySpawner Instance = null;
+        public static EnemySpawner Instance;
 
         public float maxSpawnRateInSeconds = 0.5f;
         public float minSpawnRateInSeconds = 0.1f;
 
-        public bool stopEnemySpawn;
-        private int _counter = 0;
-
-        private float _edgeMaxYPosition;
-
-        // public GameObject enemiesContainer;
-        private float _edgeMinYPosition;
+        public bool isCreatingEnemies;
+        
+        
+        private SpaceManager _spaceManager;
         private GameObject _oneEnemy;
         private PoolManager _poolManager;
-        private float _previousYPosition;
-        private int _randEnemyIndex;
-        private float _randomYPosition;
-        private SpaceManager _spaceManager;
-        private float _spawnInSeconds;
-        private int _totalEnemies;
+        
+        private float _previousYPosition, _randomYPosition, _spawnInSeconds, _edgeMinYPosition, _edgeMaxYPosition;
+        private int _randEnemyIndex, _totalEnemies;
 
         private void Awake()
         {
@@ -37,35 +31,33 @@ namespace _Scripts.FG.NPC
         {
             _spaceManager = SpaceManager.Instance;
             _poolManager = PoolManager.Instance;
-            _edgeMinYPosition = _spaceManager.blackGroundBound.min.y;
-            _edgeMaxYPosition = _spaceManager.blackGroundBound.max.y;
+            _edgeMinYPosition = _spaceManager.BlackGroundBound.min.y;
+            _edgeMaxYPosition = _spaceManager.BlackGroundBound.max.y;
             Invoke(nameof(SpawnEnemy), 0);
         }
 
         private void SpawnEnemy()
         {
-            _randEnemyIndex = Random.Range(_poolManager.enemyPoolStartIndex, _poolManager.enemyPoolEndIndex);
-
-            int distance = 30;
-
-
-            while (true)
+            if (isCreatingEnemies)
             {
-                _randomYPosition = Random.Range(_edgeMinYPosition + 5, _edgeMaxYPosition - 5);
+                _randEnemyIndex = Random.Range(_poolManager.EnemyPoolStartIndex, _poolManager.EnemyPoolEndIndex);
 
-                if (Mathf.Abs(_randomYPosition - _previousYPosition) > distance)
+                int distance = 30;
+
+
+                while (true)
                 {
-                    break;
+                    _randomYPosition = Random.Range(_edgeMinYPosition + 5, _edgeMaxYPosition - 5);
+
+                    if (Mathf.Abs(_randomYPosition - _previousYPosition) > distance)
+                    {
+                        break;
+                    }
                 }
+
+                _previousYPosition = _randomYPosition;
+                _poolManager.SpawnRandomEnemyFromPool(_randEnemyIndex, new Vector2(0, _randomYPosition));
             }
-
-            _counter++;
-
-            _previousYPosition = _randomYPosition;
-
-            _oneEnemy = _poolManager.SpawnRandomEnemyFromPool(_randEnemyIndex, new Vector2(0, _randomYPosition));
-            //  _oneEnemy.GetComponent<Rigidbody2D>().AddForce(new Vector2(-2000, 0));
-
             ScheduleNextEnemySpawn();
         }
 

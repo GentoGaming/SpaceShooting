@@ -2,14 +2,15 @@
 
 namespace _Scripts.FG.Background_Parallax
 {
+    [RequireComponent(typeof(SpriteRenderer))]
+
     public class FadeColorInOut : MonoBehaviour
     {
         private SpriteRenderer _spriteRenderer;
         private bool _fadeout = true;
         private float _alphaColor = 0.3f;
-
         public float speedOfFading = 200;
-
+        
         // Start is called before the first frame update
         void Start()
         {

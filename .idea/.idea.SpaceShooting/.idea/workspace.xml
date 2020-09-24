@@ -32,6 +32,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/FG/Background Parallax/FadeColorInOut.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/FG/Weapons/BombLauncher.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/FG/Weapons/SingleTurret.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/Hub/Editor/2020.1.2f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../GUI/Assets/ToonEffect_V2/Plugins/HTSpriteSheet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.0/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/FG/Managers Scripts/IPooledObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/FG/Weapons/TripleTurret.cs" root0="FORCE_HIGHLIGHTING" />
@@ -55,7 +57,6 @@
         <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Camera/CameraRation.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Camera/CameraRatio.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/FG/NPC/EnemyContol.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Background Parallax/BackgroundEffects.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Player/PlayerActions.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Player/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/FG/NPC/IEntity.cs" />
@@ -64,24 +65,33 @@
         <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Weapons/HomingMissle.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/FG/NPC/HealthBar/HealthBar.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Managers Scripts/IPooledObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Background Parallax/FadeColorInOut.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Camera/CameraScreenRatio.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Managers Scripts/PoolManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Managers Scripts/SpaceManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Managers Scripts/WeaponsManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/NPC/Enemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/NPC/EnemySpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Player/PlayerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Player/PlayerInput.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Player/SpaceShip.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/FG/ScriptableObjects/Pool.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Weapons/BombLauncher.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Weapons/PickUp.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Weapons/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Weapons/SingleTurret.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Weapons/TripleTurret.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Weapons/HomingMissile.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Weapons/IWeapons.cs" />
+        <option value="$PROJECT_DIR$/Assets/MenuSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Art/ToonEffect/ToonEffect_V2/Plugins/Editor/HTSpriteSequencerEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/PlayAudio.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Player/PlayerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/NPC/EnemySpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/NPC/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/ShowingScore.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Background Parallax/FadeColorInOut.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Background Parallax/BackgroundEffects.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Camera/CameraScreenRatio.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Managers Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Managers Scripts/WeaponsManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Managers Scripts/PoolManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Others/PlayAudio.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Others/ShowingScore.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Player/SpaceShip.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Weapons/Bullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/FG/Managers Scripts/SpaceManager.cs" />
       </list>
     </option>
   </component>
@@ -95,7 +105,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="ReSpellerSettingsId" />
+    <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -144,6 +154,12 @@
       <workItem from="1600755674051" duration="10925000" />
       <workItem from="1600773494859" duration="11684000" />
       <workItem from="1600786039279" duration="359000" />
+      <workItem from="1600796025399" duration="5931000" />
+      <workItem from="1600851886169" duration="7114000" />
+      <workItem from="1600864117478" duration="17069000" />
+      <workItem from="1600891425051" duration="10165000" />
+      <workItem from="1600932422613" duration="408000" />
+      <workItem from="1600932982975" duration="212000" />
     </task>
     <servers />
   </component>
@@ -172,10 +188,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="869" y="250" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600732008202" />
-    <state x="477" y="185" key="SettingsEditor" timestamp="1600114087173">
+    <state x="477" y="185" key="SettingsEditor" timestamp="1600874634561">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="477" y="185" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1600114087173" />
+    <state x="477" y="185" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1600874634561" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1600534056853">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -184,5 +200,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="632" y="252" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600111061587" />
+    <state x="588" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1600885662092">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="588" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600885662092" />
   </component>
 </project>

@@ -6,9 +6,12 @@ using UnityEngine;
 
 namespace _Scripts.FG.Managers_Scripts
 {
+    
+    [RequireComponent(typeof(AudioSource))]
+    
     public class WeaponsManager : MonoBehaviour
     {
-        public static WeaponsManager Instance = null;
+        public static WeaponsManager Instance;
         public GameObject slotsContainer;
         public GameObject player;
         public List<GameObject> weaponList;
@@ -18,8 +21,8 @@ namespace _Scripts.FG.Managers_Scripts
         private List<GameObject> _slotsUI;
         private GameObject _weaponContainer;
         [NonSerialized] public bool IsShooting;
-        [NonSerialized] public ParticleSystem particleSystemExplosion;
-        public AudioSource AudioSource { get; set; }
+        [NonSerialized] public ParticleSystem ParticleSystemExplosion;
+        public AudioSource AudioSource { get; private set; }
 
 
         private void Awake()
@@ -27,7 +30,7 @@ namespace _Scripts.FG.Managers_Scripts
             if (Instance != null) return;
             Instance = this;
             AudioSource = GetComponent<AudioSource>();
-            particleSystemExplosion = explosionGameObject.GetComponent<ParticleSystem>();
+            ParticleSystemExplosion = explosionGameObject.GetComponent<ParticleSystem>();
 
             InitNewWeapon();
         }
@@ -46,17 +49,14 @@ namespace _Scripts.FG.Managers_Scripts
         {
             foreach (Transform oneSlot in slotsContainer.transform)
             {
-                if (oneSlot.CompareTag($"Slots"))
+                if (!oneSlot.CompareTag("Slots")) continue;
+                if (oneSlot.name.Equals("GreenSprite"))
                 {
-                    if (oneSlot.name.Equals("GreenSprite"))
-                    {
-                        _greenSlot = oneSlot.gameObject;
-                        continue;
-                    }
-                    else
-                    {
-                        _slotsUI.Add(oneSlot.gameObject);
-                    }
+                    _greenSlot = oneSlot.gameObject;
+                }
+                else
+                {
+                    _slotsUI.Add(oneSlot.gameObject);
                 }
             }
         }
@@ -68,11 +68,9 @@ namespace _Scripts.FG.Managers_Scripts
 
             foreach (Transform oneWeapon in _allWeaponsTransform)
             {
-                if (oneWeapon.CompareTag($"Weapons"))
-                {
-                    weaponList.Add(oneWeapon.gameObject);
-                    oneWeapon.gameObject.SetActive(false);
-                }
+                if (!oneWeapon.CompareTag("Weapons")) continue;
+                weaponList.Add(oneWeapon.gameObject);
+                oneWeapon.gameObject.SetActive(false);
             }
         }
 
@@ -88,7 +86,7 @@ namespace _Scripts.FG.Managers_Scripts
                 if (i >= weaponList.Count) break;
                 GameObject oneWeapon = weaponList[i];
                 IWeapons oneWeaponUI = oneWeapon.gameObject.GetComponent<IWeapons>();
-                GameObject weaponUI = Instantiate(oneWeaponUI.GetWeaponUI(), _slotsUI[i].transform);
+                Instantiate(oneWeaponUI.GetWeaponUI(), _slotsUI[i].transform);
             }
         }
 

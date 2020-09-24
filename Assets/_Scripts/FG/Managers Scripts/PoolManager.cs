@@ -14,7 +14,7 @@ namespace _Scripts.FG.Managers_Scripts
             public Pool poolInfo;
         }
 
-        public static PoolManager Instance = null;
+        public static PoolManager Instance;
 
 
         public List<PoolClass> bulletPolls;
@@ -24,8 +24,8 @@ namespace _Scripts.FG.Managers_Scripts
         private Dictionary<String, Queue<GameObject>> _poolDictionary;
         private IPooledObject _pooledObject;
 
-        [NonSerialized] public int enemyPoolStartIndex;
-        [NonSerialized] public int enemyPoolEndIndex;
+        [NonSerialized] public int EnemyPoolStartIndex;
+        [NonSerialized] public int EnemyPoolEndIndex;
 
         public GameObject bulletsGameObject;
         public GameObject enemiesGameObject;
@@ -37,8 +37,8 @@ namespace _Scripts.FG.Managers_Scripts
             if (Instance != null) return;
             Instance = this;
 
-            enemyPoolStartIndex = bulletPolls.Count;
-            enemyPoolEndIndex = enemyPools.Count + enemyPoolStartIndex;
+            EnemyPoolStartIndex = bulletPolls.Count;
+            EnemyPoolEndIndex = enemyPools.Count + EnemyPoolStartIndex;
             _poolDictionary = new Dictionary<string, Queue<GameObject>>();
 
             FillInPools(bulletPolls, bulletsGameObject);
@@ -82,7 +82,7 @@ namespace _Scripts.FG.Managers_Scripts
         public GameObject SpawnRandomEnemyFromPool(int randomEnemy, Vector2 enemyPosition)
         {
             return SpawnObjFromPool(GETEnemyPoolTag(randomEnemy), enemyPosition,
-                enemyPools[randomEnemy - enemyPoolStartIndex].poolInfo.rotation);
+                enemyPools[randomEnemy - EnemyPoolStartIndex].poolInfo.rotation);
         }
 
         public GameObject SpawnObjFromPool(string poolTag, Vector2 localPosition, Vector3 localRotation)

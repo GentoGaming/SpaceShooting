@@ -1,10 +1,13 @@
 ﻿using _Scripts.FG.Managers_Scripts;
 using _Scripts.FG.NPC;
 using _Scripts.FG.Weapons;
+using TMPro;
 using UnityEngine;
 
 namespace _Scripts.FG.Player
 {
+    [RequireComponent(typeof(Rigidbody))]
+
     public class SpaceShip : MonoBehaviour, IEntity
     {
         [SerializeField] private float startHealth = 100;
@@ -14,6 +17,7 @@ namespace _Scripts.FG.Player
         private SpaceManager _spaceManager;
         private Rigidbody2D _spaceShipRigidBody;
         private IWeapons _weapon;
+        public  TMP_Text healthTextUI;
         public float Shooting { get; set; }
 
         private void Start()
@@ -59,8 +63,12 @@ namespace _Scripts.FG.Player
 
         private void UpdateHealthUI()
         {
-            _spaceManager.healthBar.SetSize(NormalizedHealth());
-            _spaceManager.healthBar.SetColor(Health);
+            healthTextUI.text = (int)Health+"%";
+            if (Health <= 0)
+            {
+                _spaceManager.GameIsOver();
+                gameObject.SetActive(false);
+            }
         }
 
 
